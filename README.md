@@ -27,5 +27,5 @@ grep -rl System.out.println\(\"●●●●start●●●● ./ | xargs readlink
 
 ```
 //2.ファイルパスを指定してSystem.out.println\(\"●●●●start●●●●というコンテキストを含む行を削除し、ファイルを上書き保存する
-sed -i -e '/System.out.println("●●●●start●●●●"/d' ファイルパス
+sed -i -e '/System.out.println("●●●●start●●●●"/d' 1.で抽出したファイルパス
 ```
